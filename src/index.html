@@ -1,21 +1,413 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>岛主已死，请吐痰</title>
-    <meta name="description" content="岛主和它的家人 已经死亡,请吐痰">
-    <link rel="shortcut icon" href="tombstone.png">
+<html data-fbscriptallow="true" data-cbscriptallow="true" data-wgscriptallow="true" data-acxscriptallow="true"><head><link rel="icon" href="https://img.typeboom.com/extreme.png">
+<!--往代码块左上角嵌入复制按钮-->
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/4rwLQsl5N_ccppoTAwwwMrEN/recaptcha__zh_cn.js" crossorigin="anonymous" integrity="sha384-/z/1F3ApbelHTIGwZkVO5gK6c+DZmRBNl6gsMmbvWpZy5xWEl44/SlYww0UzdoRU"></script><script src="https://img.typeboom.com/JavaScript/copy.js" type="text/javascript"></script>
+<style>
+</style>
 
-</head>
 
-<body>
-<div style="text-align: center;">
-    <div class="">
-        <h1>岛主的灵堂</h1>
-        <audio controls="controls" loop="loop" autoplay="autoplay"> <source src="2847226467.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio><br><br>
-        <b>你的PortForward跑路不退款<br>你利用用户电脑DDoS软件小妹<br>你通过污蔑他人的方法来挽回你那可怜的名声</b><br>
-        <h2>今日,你长眠于此,R.I.P</h2>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>循环下载脚本 - Type boom</title>
+<!-- MDUI CSS -->
+<link rel="stylesheet" href="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/mdui@1.0.1/css/mdui.min.css" integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous">
+
+<!-- MDUI JavaScript -->
+<script src="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/mdui@1.0.1/js/mdui.min.js" integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A" crossorigin="anonymous"></script>
+
+  <link href="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/css/mori.css" rel="stylesheet">
+  <link href="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/css/flat-ui.min.css" rel="stylesheet">
+  <link href="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/css/prism.css" rel="stylesheet">
+  <link href="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/fonts/md/css/material-design-iconic-font.min.css" rel="stylesheet">
+  <link href="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/js/zoom-js/css/zoom.css" rel="stylesheet">
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
+      <script src="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/js/vendor/html5shiv.js"></script>
+      <script src="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  <meta name="description" content="最近闲来无事，写了一个可以循环下载指定URL的脚本，支持Windows和LinuxLinux：wget --no-check-certificate https://img.typeboom.c...">
+<meta name="keywords" content="脚本,bash,curl,地址,dows,tgi,linuxlinux,wget">
+<meta name="generator" content="Typecho 1.1/17.10.30">
+<meta name="template" content="Moricolor-for-Typecho">
+<link rel="alternate" type="application/rss+xml" title="循环下载脚本 » Type boom » RSS 2.0" href="https://www.typeboom.com/feed/archives/105/">
+<link rel="alternate" type="application/rdf+xml" title="循环下载脚本 » Type boom » RSS 1.0" href="https://www.typeboom.com/feed/rss/archives/105/">
+<link rel="alternate" type="application/atom+xml" title="循环下载脚本 » Type boom » ATOM 1.0" href="https://www.typeboom.com/feed/atom/archives/105/">
+<script type="text/javascript">
+(function () {
+    window.TypechoComment = {
+        dom : function (id) {
+            return document.getElementById(id);
+        },
+    
+        create : function (tag, attr) {
+            var el = document.createElement(tag);
+        
+            for (var key in attr) {
+                el.setAttribute(key, attr[key]);
+            }
+        
+            return el;
+        },
+
+        reply : function (cid, coid) {
+            var comment = this.dom(cid), parent = comment.parentNode,
+                response = this.dom('respond-post-105'), input = this.dom('comment-parent'),
+                form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                textarea = response.getElementsByTagName('textarea')[0];
+
+            if (null == input) {
+                input = this.create('input', {
+                    'type' : 'hidden',
+                    'name' : 'parent',
+                    'id'   : 'comment-parent'
+                });
+
+                form.appendChild(input);
+            }
+
+            input.setAttribute('value', coid);
+
+            if (null == this.dom('comment-form-place-holder')) {
+                var holder = this.create('div', {
+                    'id' : 'comment-form-place-holder'
+                });
+
+                response.parentNode.insertBefore(holder, response);
+            }
+
+            comment.appendChild(response);
+            this.dom('cancel-comment-reply-link').style.display = '';
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea.focus();
+            }
+
+            return false;
+        },
+
+        cancelReply : function () {
+            var response = this.dom('respond-post-105'),
+            holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+
+            if (null != input) {
+                input.parentNode.removeChild(input);
+            }
+
+            if (null == holder) {
+                return true;
+            }
+
+            this.dom('cancel-comment-reply-link').style.display = 'none';
+            holder.parentNode.insertBefore(response, holder);
+            return false;
+        }
+    };
+})();
+</script>
+<script type="text/javascript">
+(function () {
+    var event = document.addEventListener ? {
+        add: 'addEventListener',
+        triggers: ['scroll', 'mousemove', 'keyup', 'touchstart'],
+        load: 'DOMContentLoaded'
+    } : {
+        add: 'attachEvent',
+        triggers: ['onfocus', 'onmousemove', 'onkeyup', 'ontouchstart'],
+        load: 'onload'
+    }, added = false;
+
+    document[event.add](event.load, function () {
+        var r = document.getElementById('respond-post-105'),
+            input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = '_';
+        input.value = (function () {
+    var _wQtC3 = //'Weu'
+'ac'+'1ab'//'6'
++//'3f'
+'3f'+'6f'//'9'
++'T6w'//'T6w'
++'3d3'//'v'
++//'k'
+'d'+//'2'
+'312'+//'7GX'
+'f2e'+/* '6s9'//'6s9' */''+//'AVA'
+'e'+'6'//'qjx'
++//'qxG'
+'ed'+//'kBz'
+'6e'+'1'//'q0'
++//'c'
+'b'+//'M'
+'M'+//'cf'
+'67'+''///*'RG'*/'RG'
++'b9d'//'6F2'
++//'XB'
+'7'+//'drn'
+'9', _DyK = [[5,7],[7,10],[25,26]];
+    
+    for (var i = 0; i < _DyK.length; i ++) {
+        _wQtC3 = _wQtC3.substring(0, _DyK[i][0]) + _wQtC3.substring(_DyK[i][1]);
+    }
+
+    return _wQtC3;
+})();
+
+        if (null != r) {
+            var forms = r.getElementsByTagName('form');
+            if (forms.length > 0) {
+                function append() {
+                    if (!added) {
+                        forms[0].appendChild(input);
+                        added = true;
+                    }
+                }
+            
+                for (var i = 0; i < event.triggers.length; i ++) {
+                    var trigger = event.triggers[i];
+                    document[event.add](trigger, append);
+                    window[event.add](trigger, append);
+                }
+            }
+        }
+    });
+})();
+</script><script src="https://www.recaptcha.net/recaptcha/api.js?render=6LdAmbcaAAAAAOR0_-8GREB9u8DynNAxuasaB6MH"></script><style type="text/css">.grecaptcha-badge {display: none !important;}</style><style id="YnRuLWNvZGUtY29weQ">
+                .btn-code-copy {
+                    position: absolute;
+                    line-height: .6em;
+                    top: .2em;
+                    right: .2em;
+                    color: rgb(87, 87, 87);
+                }
+                .btn-code-copy:hover {
+                    color: rgb(145, 145, 145);
+                    cursor: pointer;
+                }
+                </style></head>
+
+<body class="mdui-loaded">
+  <header>
+    
+  </header>
+<div id="main" class="container">
+    <div id="main-post" role="main" itemscope="" itemtype="http://schema.org/BlogPosting" style="">
+        <article class="post" style="padding-top: 20px;">
+            <h2 itemprop="name headline" style="font-weight: normal;">岛主已死，请吐痰</h2>
+            
+            <!-- 头图 -->
+                        <!-- end -->
+            <div class="post-content" itemprop="articleBody">
+                <p>你的PortForward跑路不退款<br>你利用用户电脑DDoS软件小妹<br>你通过污蔑他人的方法来挽回你那可怜的名声
+</p>
+<audio controls="controls" loop="loop" autoplay="autoplay"> <source src="/2847226467.mp3" type="audio/mpeg"> Your browser does not support the audio element. </audio><p><img data-action="zoom" src="/photo_2022-06-30_13-47-27.jpg" alt="Windows10" title="sb" class="" style=""></p>            </div>
+        </article>
+    </div>
+
+    <center>
+        
+    </center>
+    <style type="text/css">
+    .gen {
+        margin: 1rem 0 0 0
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .gen .page-navigator {
+        margin: 3.75rem 0 3rem 0
+    }
+
+    .response {
+        margin: 2rem 0;
+        padding-top: 1em;
+    }
+
+    .hinfo {
+        display: none;
+    }
+
+    .gen a {
+        color: #aaa
+    }
+
+    .comment-list {
+        padding-left: 0;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    .avatar {
+        display: block;
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin: 1.4rem 1rem 0 0;
+        border-radius: 50%
+    }
+
+    .comment_main {
+        overflow: hidden;
+        padding: 1rem 0;
+        border-bottom: 1px dotted #e0e0e0;
+    }
+
+    .comment_main p {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .ccomment_reply,
+    .comment_meta {
+        font-size: .766rem;
+        margin-top: 1rem;
+        color: #aaa
+    }
+
+    .comment_reply {
+        float: right;
+        display: none
+    }
+
+    .comment_main:hover .comment_reply {
+        display: block
+    }
+
+    .comment_author {
+        padding: .1rem .25rem;
+        border-radius: .25rem;
+        background: #eee;
+        font-size: 10px;
+    }
+
+    .ccomment_reply {
+        text-align: right;
+    }
+
+    .comment_reply a:before,
+    .comment_time:before {
+        margin: 0 .5rem
+    }
+
+    .comment-parent>.comment-children {
+        margin-left: 1rem;
+        padding-left: 40px
+    }
+
+    .comment-child .comment-children {
+        margin-left: 2em;
+    }
+
+    .tbox {
+        padding: 0 0 15px 0px;
+    }
+
+    @media only screen and (max-width:767px) {
+        .comment-parent .comment-children {
+            margin-left: 0;
+            padding-left: 0
+        }
+    }
+</style>
+
+
+    <div class="post-tor-content">
+        <div class="post-tor" id="postTor" style="display: none;">
+            <div class="torarc-t">
+                <div class="torarc-tile">
+                                    </div>
+            </div>
+        </div>
     </div>
 
 </div>
 
+<!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+<script src="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/js/vendor/jquery.min.js"></script>
+<script src="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/js/zoom-js/js/zoom.js"></script>
+<script src="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/js/vendor/bootstrap.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- <script src="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/js/vendor/video.js"></script> -->
+<script src="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/js/flat-ui.min.js"></script>
+<script src="https://www.typeboom.com/usr/themes/Moricolor-for-Typecho/js/prism.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#main-index").fadeIn(800);
+    $("#main-archive").fadeIn(800);
+    $("#main-post").fadeIn(500);
+    $("#postnav").fadeIn(800);
+    $("#main-page").fadeIn(500);
+    $("#pagenav").fadeIn(800);
+    $("#bottomtools").fadeIn(1200);
+    if (window.location.hash != '') {
+      var i = window.location.hash.indexOf('#comment');
+      var ii = window.location.hash.indexOf('#respond-post');
+      if (i != '-1' || ii != '-1') {
+        $("#comments").fadeIn(1000);
+      }
+    }
+    $("#thatsi").fadeIn(1300);
+    $("#footer").css('display', 'block');
+          // 锚点平滑滚动
+      $('a[href*=#],area[href*=#]').click(function() {
+        $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //Opera BUG fixed
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname && location.search == this.search) {
+          var $target = $(this.hash);
+          $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+          if ($target.length) {
+            var targetOffset = $target.offset().top;
+            $('html,body').animate({
+                scrollTop: targetOffset
+              },
+              1000);
+            return false;
+          }
+        }
+      });
+      // end
+      });
 
+  $("#outcomment").click(function() {
+    $("#comments").fadeIn(1000);
+  });
+
+  $("#comment_go").click(function() {
+    $("#comments").fadeIn(1000);
+  });
+
+  $("#tor_show").click(function() {
+    if ($("#postTor").attr('style') == 'display: none;') {
+      $("#postTor").fadeIn(400);
+      $("#postTor").css('display', 'inline-block');
+    } else {
+      $("#postTor").fadeOut(400);
+    }
+  });
+
+  $(function() {
+    $('[data-toggle=tooltip]').tooltip();
+  });
+
+  function actCopyLink() {
+    const input = document.createElement("input");
+    input.readOnly = 'readonly';
+    input.value = this.location.href;
+    document.body.appendChild(input);
+    input.select();
+    input.setSelectionRange(0, input.value.length);
+    document.execCommand('Copy');
+    document.body.removeChild(input);
+  }
+</script>
+
+
+<script>$("#comments").fadeIn(1000);</script>
+
+<footer id="footer" class="container" style="background: rgba(255, 255, 255, 0); display: block;">
+  <hr>
+  
+</footer>
 </body></html>
